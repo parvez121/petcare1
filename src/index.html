@@ -1,0 +1,1184 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+  <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+   
+     <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
+
+ </head>
+    <body class="bg-gray-100 scroll-smooth">
+
+    <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50 transition duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between h-16">
+        
+        <!-- Left: Logo -->
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold text-amber-400">Pet Care</a>
+        </div>
+
+        <!-- Center: Menu Items (Desktop) -->
+        <div class="hidden md:flex items-center space-x-6 font-bold">
+          <a href="#" class="relative text-gray-700 hover:text-amber-600 transition duration-300 
+            after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-amber-600 
+            after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300">Home</a>
+
+          <a href="#service" class="relative text-gray-700 hover:text-amber-600 transition duration-300 
+            after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-amber-600 
+            after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300">Services</a>
+
+          <a href="#about" class="relative text-gray-700 hover:text-amber-600 transition duration-300 
+            after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-amber-600 
+            after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300">About Us</a>
+
+          <a href="#pricing" class="relative text-gray-700 hover:text-amber-600 transition duration-300 
+            after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-amber-600 
+            after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300">Pricing</a>
+
+          <a href="#booking" class="relative text-gray-700 hover:text-amber-600 transition duration-300 
+            after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-amber-600 
+            after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300">Booking</a>
+
+          <a href="#contact" class="relative text-gray-700 hover:text-amber-600 transition duration-300 
+            after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-amber-600 
+            after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300">Contact Us</a>
+        </div>
+
+        <!-- Right: Search + Cart + Hamburger -->
+        <div class="flex items-center space-x-8">
+          <!-- Search -->
+          <button>
+            <img src="icon/magnifying-glass-solid-full.svg" class="w-[25px] h-[25px] cursor-pointer"  alt="">
+          </button>
+          <!-- Cart -->
+          <button>
+            <img src="icon/cart-shopping-solid-full.svg"  alt="" class="w-[25px] h-[25px] cursor-pointer">
+          </button>
+          <!-- Mobile Hamburger -->
+          <div class="md:hidden">
+            <button id="menu-btn" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" 
+                   class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" 
+                  d="M4 6h16M4 12h16M4 18h16"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" 
+         class="md:hidden max-h-0 overflow-hidden transition-all duration-500 ease-in-out px-4 space-y-2 bg-white shadow">
+      <a href="#" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Home</a>
+      <a href="#service" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Services</a>
+      <a href="#about" class="block text-gray-700 hover:text-indigo-600 transition duration-300">About Us</a>
+      <a href="#pricing" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Pricing</a>
+      <a href="#booking" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Booking</a>
+      <a href="#contact" class="block text-gray-700 hover:text-indigo-600 transition duration-300">Contact Us</a>
+    </div>
+  </nav>
+
+
+<!-- Second Section -->
+<section class=" flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6 gap-8 mt-8 mb-5 sm:mt-3">
+  
+  <!-- Left Content -->
+  <div class="flex-1 text-center md:text-left">
+    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 leading-tight">
+      <span class="text-amber-400">Welcome to</span> Our Service
+    </h1>
+    <p class="mt-10 text-gray-600 text-lg">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque voluptatibus, odit nostrum fugit ut dolores tempore nesciunt minima itaque repellendus expedita rem sed, perferendis amet dolorum qui libero quidem cum quos delectus soluta! Dolorem doloremque fuga voluptas hic sequi tempore ea, nemo earum libero architecto aliquid, veniam ab nisi cumque.
+    </p>
+    <button class="mt-10 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md 
+                   hover:bg-indigo-700 transition duration-300 cursor-pointer">
+      Get Started
+    </button>
+  </div>
+
+  <!-- Right Image -->
+  <div class="flex-1 flex justify-center">
+    <img src="img/dogs.png" alt="Service Image" class="rounded-xl">
+  </div>
+</section>
+
+
+ <!-- service slider section-->
+    <section class="py-16 bg-gradient-to-br from-green-50 to-blue-5 " id="service">
+        <div class="container mx-auto px-4 ">
+            <!-- section header-->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4 underline  underline-offset-8">Our <span class="text-amber-400">Services</span></h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">We Provide Best Services For Your Pet's</p>
+            </div>
+
+            <!-- Swiper slider -->
+            <div class="swiper service-swiper">
+                <div class="swiper-wrapper">
+                    <!-- slider 1 -->
+                    <div class="swiper-slide">
+                        <div class="service-card overflow-hidden max-w-sm mx-auto">
+                            <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-600 relative overflow-hidden">
+                                <div class="absolute"><img src="img/hygenic.jpg" alt=""></div>
+                                <div class="absolute bottom-4 left-6">
+                                    <div class="w-12 h-11 bg-white rounded-lg flex items-center justify-center">
+                                        <img src="icon/veterinary-care-svgrepo-com.svg" alt="" class="p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Vaterinary</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                   Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate a tempore sunt tenetur dolores.
+                                </p>
+                                <ul class="text-gray-600 space-y-2 mb-6">
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Regular Health Chekup
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Vaccination
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Emergency Care
+                                    </li>
+                                </ul>
+                                <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="service-card overflow-hidden max-w-sm mx-auto">
+                            <div class="h-48 bg-gradient-to-r from-green-500 to-green-600 relative overflow-hidden">
+                                <div class="absolute">
+                                    <img src="img/pet grooming.jpg" alt="">
+                                </div>
+                                <div class="absolute bottom-4 left-6">
+                                    <div class="w-12 h-11 bg-white rounded-lg flex items-center justify-center">
+                                        <img src="icon/grooming-comb-svgrepo-com.svg" alt="" class="p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Pet Grooming</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, sint. Culpa architecto officia doloremque!
+                                </p>
+                                <ul class="text-gray-600 space-y-2 mb-6">
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Hair Cutting and styling
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Bath and fresh
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Nail cliping and cleaning
+                                    </li>
+                                </ul>
+                                <button class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="service-card overflow-hidden max-w-sm mx-auto">
+                            <div class="h-48 bg-gradient-to-r from-purple-500 to-purple-600 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-black bg-opacity-20"> 
+                                    <img src="img/emergency.png" alt="">
+                                </div>
+                                <div class="absolute bottom-4 left-6">
+                                    <div class="w-12 h-11 bg-white rounded-lg flex items-center justify-center">
+                                        <img src="icon/training-class-svgrepo-com.svg" alt="" class="p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Pet Training</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur dolorum iusto nulla exercitationem dolorem!
+                                </p>
+                                <ul class="text-gray-600 space-y-2 mb-6">
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Basic Training
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Behavior Modification 
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Party Training
+                                    </li>
+                                </ul>
+                                <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 4-->
+                    <div class="swiper-slide">
+                        <div class="service-card overflow-hidden max-w-sm mx-auto">
+                            <div class="h-48 bg-gradient-to-r from-yellow-500 to-yellow-600 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-black bg-opacity-20">
+                                    <img src="img/pet boarding.jpg" alt="">
+                                </div>
+                                <div class="absolute bottom-4 left-6">
+                                    <div class="w-12 h-11 bg-white rounded-lg flex items-center justify-center">
+                                       <img src="icon/pet-hotel-sign-of-a-bone-in-a-dog-house-svgrepo-com.svg" alt="" class="p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Pet Boarding</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga vero impedit dicta. Nihil, dolorum.
+                                </p>
+                                <ul class="text-gray-600 space-y-2 mb-6">
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        24/7 Super vission
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        AC Room
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Regular exercise
+                                    </li>
+                                </ul>
+                                <button class="w-full bg-yellow-600 text-white py-3 rounded-lg font-semibold hover:bg-yellow-700 transition">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- slide 5 -->
+                    <div class="swiper-slide">
+                        <div class="service-card overflow-hidden max-w-sm mx-auto">
+                            <div class="h-48 bg-gradient-to-r from-red-500 to-red-600 relative overflow-hidden">
+                                <div class="absolute inset-0 bg-black bg-opacity-20">
+                                    <img src="img/pet food.jpg" alt="">
+                                </div>
+                                <div class="absolute bottom-4 left-6">
+                                    <div class="w-12 h-11 bg-white rounded-lg flex items-center justify-center">
+                                        <img src="icon/pet-food-svgrepo-com.svg" alt="" class="p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6">
+                                <h3 class="text-2xl font-bold text-gray-800 mb-3">Pet Food</h3>
+                                <p class="text-gray-600 mb-4 leading-relaxed">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam distinctio eos ab? Cum, adipisci.
+                                </p>
+                                <ul class="text-gray-600 space-y-2 mb-6">
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                       Organic Food
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Daet Consultaion
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-4 h-4 text-green-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                                        </svg>
+                                        Home Delevery
+                                    </li>
+                                </ul>
+                                <button class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                                    Read More
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+
+
+
+ <!-- About Section -->
+ <div id="about" class="text-center mt-2 mb-17 text-4xl underline underline-offset-8 font-bold text-gray-800">
+        <h1><span class="text-amber-400">About</span> Us</h1>
+    </div>
+  <section class="py-0 px-4 md:px-12 lg:px-20 mt-4" >
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
+
+      <!-- Left Image -->
+      <div class="flex justify-center md:justify-start">
+        <img src="img/hygenic.jpg" 
+             alt="Pet Care" 
+             class="rounded-lg shadow-lg w-full md:w-[90%] h-full object-cover">
+      </div>
+
+      <!-- Right Text -->
+      <div class="flex flex-col justify-between h-full text-center md:text-left">
+        <div>
+          <p class="text-sm uppercase tracking-wide text-gray-500">About Us</p>
+          <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mt-2">
+            We are the Best for <span class="text-orange-500">Your Pet Care</span>
+          </h2>
+          <p class="text-gray-600 mt-4 leading-relaxed">
+           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, reprehenderit, aut, repellat molestias corrupti quos mollitia quam nihil labore quas sit laborum dolorum quae numquam neque asperiores a accusantium! Libero illo quaerat fugiat velit reprehenderit ipsam, at temporibus sapiente laboriosam accusantium natus provident sed, nostrum inventore porro asperiores, quo laudantium tempora! Mollitia reprehenderit distinctio impedit accusamus beatae nesciunt optio iure. Laboriosam, praesentium? Cupiditate facilis at dolores blanditiis error laudantium doloribus? Ipsam pariatur dolor suscipit labore deserunt voluptates. Rem aliquid repellendus vitae fugiat consequuntur nobis autem ducimus illo accusamus, velit ipsam placeat molestias quam voluptates sed unde atque quasi culpa? Provident?
+          </p>
+        </div>
+        <div class="mt-6">
+          <button class="px-5 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
+            Read More
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+
+ <!-- Package planning section -->
+    <section class=" px-4 mt-28 " id="pricing">
+        <div class="container mx-auto">
+            <!-- header-->
+            <div class="text-center mb-12 mt-13">
+                    <h2 class="sm:text-4xl text-3xl font-bold text-gray-800 mb-4 underline  underline-offset-[15px]">Our Pack<span class="text-amber-400">age planning</span></h2>
+                
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Select The package that suits your pet's needs.</p>
+            </div>
+
+            <!-- Package cards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Friendly Package-->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+                    <div class="bg-green-500 text-white py-6 text-center">
+                        <h3 class="text-2xl font-bold">Friendly Package</h3>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold">$30</span>
+                            <span class="text-green-100">/Month</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Weakly Health Chekup</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Basic Grooming Service</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>General vaccination</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Telephone consultation</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times mt-1 mr-3"></i>
+                                <span>Emergency service 24/7</span>
+                            </li>
+                            <li class="flex items-start text-gray-400">
+                                <i class="fas fa-times mt-1 mr-3"></i>
+                                <span>Specialized training</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition duration-300">
+                            Select package
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Family Package -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 border-2 border-blue-500 relative">
+                    <div class="absolute top-0 right-0 bg-blue-500 text-white px-4 py-1 rounded-bl-lg text-sm font-semibold">
+                       Popular
+                    </div>
+                    <div class="bg-blue-600 text-white py-6 text-center">
+                        <h3 class="text-2xl font-bold">Family Package</h3>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold">$50</span>
+                            <span class="text-blue-100">/Month/span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                                <span>Weakly Health Checkup</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                                <span>Full Grooming Service</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                                <span>All necessary vaccinations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                                <span>Video Consultation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                                <span>Emergency services 12/7</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
+                                <span>Basic Behavior Training</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition duration-300">
+                            Select package
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Exclusive Package-->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+                    <div class="bg-purple-600 text-white py-6 text-center">
+                        <h3 class="text-2xl font-bold">Exclusive Package</h3>
+                        <div class="mt-4">
+                            <span class="text-4xl font-bold">$80</span>
+                            <span class="text-purple-100">/Month</span>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-4 mb-8">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
+                                <span>Daily health monitoring</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
+                                <span>Premium Grooming Service</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
+                                <span>All vaccines + special vaccines</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
+                                <span>Home visit service</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
+                                <span>Emergency service 24/7</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
+                                <span>Advanced Training Program</span>
+                            </li>
+                        </ul>
+                        <button class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition duration-300">
+                            Select package
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="mt-15 text-center">
+                <p class="text-gray-600 mb-4 sm:text-4xl text-2xl">Customized packages are also available for your pet's special needs.</p>
+                <button class="bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 cursor-pointer rounded-lg font-semibold transition duration-300">
+                    Contact for custom packages.
+                </button>
+            </div>
+        </div>
+    </section>
+
+  
+
+
+
+    <!-- Booking Section -->
+  <section class="py-12 px-4 md:px-12 lg:px-20 bg-gray-100" id="booking">
+    <div class="text-center sm:mb-18 text-4xl mt-5 font-bold text-gray-800">
+        <h2>Booking your <span class="text-amber-400"> Appointment</span></h2>
+    </div>
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+      <!-- Left Form -->
+      <div class="bg-gray-100 p-6 md:p-8 rounded-2xl shadow-lg w-full">
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center md:text-left">
+          Book an Appointment
+        </h2>
+        <form action="#" class="space-y-4">
+
+          <div>
+            <label class="block text-gray-700 mb-1">Full Name</label>
+            <input type="text" placeholder="Enter your name" 
+                   class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+          </div>
+
+
+          <div>
+            <label class="block text-gray-700 mb-1">Phone Number</label>
+            <input type="tel" placeholder="Enter your phone number" 
+                   class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+          </div>
+
+
+          <div>
+            <label class="block text-gray-700 mb-1">Preferred Date</label>
+            <input type="date" 
+                   class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+          </div>
+
+
+          <div>
+            <label class="block text-gray-700 mb-1">Email Address</label>
+            <input type="email" placeholder="Enter your email" 
+                   class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+          </div>
+
+          <!-- Service -->
+          <div>
+            <label class="block text-gray-700 mb-1">Select Service</label>
+            <select class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
+              <option>-- Choose a Service --</option>
+              <option>Pet Grooming</option>
+              <option>Veterinary Checkup</option>
+              <option>Pet Training</option>
+              <option>Vaccination</option>
+              <option>Day Care</option>
+            </select>
+          </div>
+
+
+          <div>
+            <button type="submit" 
+                    class="w-full bg-blue-600 text-white py-2 rounded-lg shadow hover:bg-blue-700 transition">
+              Submit Now
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+      <!-- Right Image -->
+      <div class="flex justify-center md:justify-end sm:h-full sm:w-full">
+        <img src="img/booking.jpg" 
+             alt="Booking" 
+             class="rounded-2xl shadow-lg w-full md:w-[90%] object-cover">
+      </div>
+
+    </div>
+  </section>
+
+
+
+ <!-- Testimonials Section -->
+    <section class="py-20 px-4" id="testimonial">
+        <div class="max-w-7xl mx-auto">
+            <!-- Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    What Our <span class="text-amber-400">Clients Say</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Trusted by pet owners across America. Read their experiences with our premium pet care services.
+                </p>
+            </div>
+
+            <!-- Swiper Slider -->
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper">
+                    <!-- Testimonial 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 h-full">
+                            <div class="flex items-center mb-6">
+                                <img class="w-14 h-14 rounded-full object-cover border-2 border-green-200" 
+                                     src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                     alt="Sarah Johnson">
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-bold text-gray-900">Sarah Johnson</h3>
+                                    <p class="text-amber-400 text-sm">New York</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            
+                            <p class="text-gray-700 mb-4 leading-relaxed">
+                                "As a busy professional in Manhattan, I was struggling to give my golden retriever the attention he needs. Pet Care's exclusive package has been a lifesaver!"
+                            </p>
+                            
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-calendar-check text-amber-400 mr-2"></i>
+                                <span>Family Package • 8 months</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 h-full">
+                            <div class="flex items-center mb-6">
+                                <img class="w-14 h-14 rounded-full object-cover border-2 border-green-200" 
+                                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                     alt="Michael Chen">
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-bold text-gray-900">Michael Chen</h3>
+                                    <p class="text-amber-400 text-sm">California</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            
+                            <p class="text-gray-700 mb-4 leading-relaxed">
+                                "Living in LA with two persian cats, I needed reliable pet care. The grooming service is exceptional! My cats look fabulous every time Lorem ipsum dolor sit amet. "
+                            </p>
+                            
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-calendar-check text-amber-400 mr-2"></i>
+                                <span>Exclusive Package • 1 year</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 h-full">
+                            <div class="flex items-center mb-6">
+                                <img class="w-14 h-14 rounded-full object-cover border-2 border-green-200" 
+                                     src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                     alt="Jennifer Martinez">
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-bold text-gray-900">Jennifer Martinez</h3>
+                                    <p class="text-amber-400 text-sm">Texas</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star-half-alt text-yellow-400"></i>
+                            </div>
+                            
+                            <p class="text-gray-700 mb-4 leading-relaxed">
+                                "With three dogs in Houston, finding quality care was challenging until we discovered Pet Care. Their family package covers all our needs perfectly."
+                            </p>
+                            
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-calendar-check text-amber-400 mr-2"></i>
+                                <span>Family Package • 6 months</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 4 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 h-full">
+                            <div class="flex items-center mb-6">
+                                <img class="w-14 h-14 rounded-full object-cover border-2 border-green-200" 
+                                     src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                     alt="David Wilson">
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-bold text-gray-900">David Wilson</h3>
+                                    <p class="text-amber-400 text-sm">Florida</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            
+                            <p class="text-gray-700 mb-4 leading-relaxed">
+                                "I have African grey parrots that require special care. The team at Pet Care has extensive experience with exotic pets. Highly recommended!"
+                            </p>
+                            
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-calendar-check text-amber-400 mr-2"></i>
+                                <span>Custom Package • 10 months</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 5 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 h-full">
+                            <div class="flex items-center mb-6">
+                                <img class="w-14 h-14 rounded-full object-cover border-2 border-green-200" 
+                                     src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                     alt="Emily Brown">
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-bold text-gray-900">Emily Brown</h3>
+                                    <p class="text-amber-400 text-sm">Illinois</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            
+                            <p class="text-gray-700 mb-4 leading-relaxed">
+                                "The 24/7 emergency service saved my dog's life when he had a sudden health issue. I'm forever grateful to the Pet Care team for their quick response."
+                            </p>
+                            
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-calendar-check text-amber-400 mr-2"></i>
+                                <span>Emergency Care • 2 years</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 6 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-100 h-full">
+                            <div class="flex items-center mb-6">
+                                <img class="w-14 h-14 rounded-full object-cover border-2 border-green-200" 
+                                     src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80" 
+                                     alt="Robert Taylor">
+                                <div class="ml-4">
+                                    <h3 class="text-lg font-bold text-gray-900">Robert Taylor</h3>
+                                    <p class="text-amber-400 text-sm">Washington</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex mb-4">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                            
+                            <p class="text-gray-700 mb-4 leading-relaxed">
+                                "The pet training program transformed my rescue dog's behavior. The trainers are patient, knowledgeable, and truly care about the animals."
+                            </p>
+                            
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-calendar-check text-amber-400 mr-2"></i>
+                                <span>Training Program • 4 months</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination mt-8">hello</div>
+            </div>
+
+            <!-- Stats Section -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="text-3xl font-bold text-amber-400 mb-2">500+</div>
+                    <div class="text-gray-600">Happy Clients</div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="text-3xl font-bold text-amber-400 mb-2">98%</div>
+                    <div class="text-gray-600">Satisfaction Rate</div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="text-3xl font-bold text-amber-400 mb-2">45</div>
+                    <div class="text-gray-600">States Covered</div>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-lg">
+                    <div class="text-3xl font-bold text-amber-400 mb-2">4.9/5</div>
+                    <div class="text-gray-600">Average Rating</div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="mt-16 text-center">
+                <div class="bg-gradient-to-r from-amber-400 to-amber-500 rounded-3xl p-12 text-white">
+                    <h3 class="text-3xl font-bold mb-4">Join Our Happy Pet Family</h3>
+                    <p class="text-green-100 text-xl mb-8 max-w-2xl mx-auto">
+                        Experience the same exceptional care that our clients love. Your pet deserves the best!
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                        <button class="bg-white text-amber-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                            Get Started Today
+                        </button>
+                        <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-amber-400 transition duration-300">
+                            View All Packages
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+ <!-- Footer Section -->
+   <div id="contact" class="text-center text-4xl md:text-5xl font-bold  mb-8 text-gray-900">
+            <h2><span class="text-amber-400">Contact</span> Information</h2>
+        </div>
+    <footer class="bg-gray-900 text-white">
+        <!-- Main Footer Content -->
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                
+                <!-- Company Info -->
+                <div class="lg:col-span-2">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-paw text-white text-xl"></i>
+                        </div>
+                        <span class="ml-3 text-2xl font-bold">PetCare</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 leading-relaxed max-w-md">
+                        Premium pet care services across the United States. We provide exceptional veterinary care, grooming, training, and boarding services for your beloved pets.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-amber-500 transition duration-300">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-gray-300 hover:text-amber-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-amber-500 text-xs mr-2"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#service" class="text-gray-300 hover:text-amber-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-amber-500 text-xs mr-2"></i>
+                                Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#about" class="text-gray-300 hover:text-amber-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-amber-500 text-xs mr-2"></i>
+                                About Us
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#testimonial" class="text-gray-300 hover:text-amber-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-amber-500 text-xs mr-2"></i>
+                                Testimonials
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="text-gray-300 hover:text-amber-400 transition duration-300 flex items-center">
+                                <i class="fas fa-chevron-right text-amber-500 text-xs mr-2"></i>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-6">Contact Info</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt text-amber-500 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">Our Location</p>
+                                <p class="text-gray-300 text-sm">123 Pet Care Avenue<br>New York, NY 10001</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-phone text-amber-500 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">Call Us</p>
+                                <p class="text-gray-300 text-sm">+1 (555) 123-4567<br>+1 (555) 987-6543</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope text-amber-500 mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-medium">Email Us</p>
+                                <p class="text-gray-300 text-sm">info@petcare.com<br>support@petcare.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Services Grid -->
+            <div class="mt-12 pt-12 border-t border-gray-700">
+                <h3 class="text-xl font-semibold text-center mb-8">Our Services</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div class="text-center p-4 bg-gray-800 rounded-lg hover:bg-amber-500 transition duration-300 cursor-pointer">
+                        <i class="fas fa-stethoscope text-2xl mb-2 text-amber-400"></i>
+                        <p class="text-sm font-medium">Veterinary Care</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-800 rounded-lg hover:bg-amber-500 transition duration-300 cursor-pointer">
+                        <i class="fas fa-cut text-2xl mb-2 text-amber-400"></i>
+                        <p class="text-sm font-medium">Grooming</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-800 rounded-lg hover:bg-amber-500 transition duration-300 cursor-pointer">
+                        <i class="fas fa-graduation-cap text-2xl mb-2 text-amber-400"></i>
+                        <p class="text-sm font-medium">Training</p>
+                    </div>
+                    <div class="text-center p-4 bg-gray-800 rounded-lg hover:bg-amber-500 transition duration-300 cursor-pointer">
+                        <i class="fas fa-home text-2xl mb-2 text-amber-400"></i>
+                        <p class="text-sm font-medium">Boarding</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="mt-12 pt-12 border-t border-gray-700">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h3 class="text-xl font-semibold mb-4">Stay Updated</h3>
+                    <p class="text-gray-300 mb-6">Subscribe to our newsletter for pet care tips and special offers</p>
+                    <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-amber-500">
+                        <button class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold transition duration-300 whitespace-nowrap">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Footer -->
+        <div class="border-t border-gray-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2025 PetCare. All rights reserved.
+                    </div>
+                    <div class="flex flex-wrap justify-center gap-6 text-sm">
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Privacy Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Terms of Service</a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Cookie Policy</a>
+                        <a href="#" class="text-gray-400 hover:text-amber-400 transition duration-300">Sitemap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        // Initialize Swiper js for testimonial section
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper('.testimonialSwiper', {
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                breakpoints: {
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 40
+                    }
+                },
+                speed: 800,
+                effect: 'slide',
+                grabCursor: true,
+            });
+
+            // CTA button interactions
+            const buttons = document.querySelectorAll('button.bg-white, button.border-2');
+            buttons.forEach(button => {
+                button.addEventListener('click', function() {
+                    alert('Thank you for your interest! Our team will contact you soon.');
+                });
+            });
+        });
+    </script>
+
+
+    
+
+    <script>
+        // Package Select Button Click Event
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                if (button.textContent.includes('Select package')) {
+                    button.addEventListener('click', function() {
+                        const packageName = this.closest('.bg-white').querySelector('h3').textContent;
+                        alert(`You ${packageName} Selected! We will contact you soon.`);
+                    });
+                }
+            });
+
+            // custom package button
+            const customButton = document.querySelector('button.bg-blue-800');
+            if (customButton) {
+                customButton.addEventListener('click', function() {
+                    alert('Contact us for custom packages: +1 919-555-8247');
+                });
+            }
+        });
+    </script>
+
+<script>
+        // Swiper js for service section
+        document.addEventListener('DOMContentLoaded', function() {
+            const swiper = new Swiper('.service-swiper', {
+                // infinite loop
+                loop: true,
+                
+                // auto play
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                
+                // responsive break point
+                breakpoints: {
+                    // mobile
+                    320: {
+                        slidesPerView: 1,
+                        spaceBetween: 20
+                    },
+                    // tablet
+                    768: {
+                        slidesPerView: 2,
+                        spaceBetween: 30
+                    },
+                    // desktop
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 40
+                    }
+                },
+                
+                // slide speed
+                speed: 800,
+                
+                // effect
+                effect: 'slide',
+                
+                centeredSlides: false,
+
+                grabCursor: true,
+            });
+        });
+    </script>
+
+
+   <script>
+    // Mobile Menu Toggle with Smooth Animation
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    btn.addEventListener("click", () => {
+      if (menu.classList.contains("max-h-0")) {
+        menu.classList.remove("max-h-0");
+        menu.classList.add("max-h-screen");
+      } else {
+        menu.classList.add("max-h-0");
+        menu.classList.remove("max-h-screen");
+      }
+    });
+  </script>
+</body>
+</html>
