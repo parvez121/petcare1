@@ -14,7 +14,7 @@
    
 
  </head>
-    <body class="bg-gray-100 scroll-smooth">
+    <body class="bg-gray-100 m-0 p-0 overflow-x-hidden">
 
     <!-- Navbar -->
   <nav class="bg-white shadow-md sticky top-0 z-50 transition duration-300">
@@ -23,11 +23,14 @@
         
         <!-- Left: Logo -->
         <div class="flex items-center">
-          <a href="#" class="text-2xl font-bold text-amber-400">Pet Care</a>
+          <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center">
+                            <i class="fas fa-paw text-white text-xl"></i>
+                        </div>
+                       <a href="#" class="ml-3 text-2xl font-bold">Pet Care</a>
         </div>
 
         <!-- Center: Menu Items (Desktop) -->
-        <div class="hidden md:flex items-center space-x-6 font-bold">
+        <div class="hidden md:flex items-center space-x-6 font-semibold">
           <a href="#" class="relative text-gray-700 hover:text-amber-600 transition duration-300 
             after:content-[''] after:absolute after:w-0 after:h-[2px] after:bg-amber-600 
             after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300">Home</a>
@@ -53,18 +56,9 @@
             after:left-0 after:-bottom-1 hover:after:w-full after:transition-all after:duration-300">Contact Us</a>
         </div>
 
-        <!-- Right: Search + Cart + Hamburger -->
-        <div class="flex items-center space-x-8">
-          <!-- Search -->
-          <button>
-            <img src="icon/magnifying-glass-solid-full.svg" class="w-[25px] h-[25px] cursor-pointer"  alt="">
-          </button>
-          <!-- Cart -->
-          <button>
-            <img src="icon/cart-shopping-solid-full.svg"  alt="" class="w-[25px] h-[25px] cursor-pointer">
-          </button>
+        
           <!-- Mobile Hamburger -->
-          <div class="md:hidden">
+          <div class="md:hidden items-center flex">
             <button id="menu-btn" class="text-gray-700 hover:text-indigo-600 focus:outline-none">
               <svg xmlns="http://www.w3.org/2000/svg" 
                    class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -73,7 +67,7 @@
               </svg>
             </button>
           </div>
-        </div>
+        
       </div>
     </div>
 
@@ -91,7 +85,7 @@
 
 
 <!-- Second Section -->
-<section class=" flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6 gap-8 mt-8 mb-5 sm:mt-3">
+<section class=" min-h-[80vh] md:min-h-screen lg:min-h-screen scroll-mt-16 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto px-6 gap-8 mt-8 mb-5">
   
   <!-- Left Content -->
   <div class="flex-1 text-center md:text-left">
@@ -115,7 +109,7 @@
 
 
  <!-- service slider section-->
-    <section class="py-16 bg-gradient-to-br from-green-50 to-blue-5 " id="service">
+    <section class=" pt-4 bg-gradient-to-br from-green-50 to-blue-5 min-h-[90vh] md:min-h-screen lg:min-h-screen scroll-mt-16 mt-19 " id="service">
         <div class="container mx-auto px-4 ">
             <!-- section header-->
             <div class="text-center mb-12">
@@ -127,7 +121,7 @@
             <div class="swiper service-swiper">
                 <div class="swiper-wrapper">
                     <!-- slider 1 -->
-                    <div class="swiper-slide">
+                    <div class="swiper-slide ">
                         <div class="service-card overflow-hidden max-w-sm mx-auto">
                             <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-600 relative overflow-hidden">
                                 <div class="absolute"><img src="img/hygenic.jpg" alt=""></div>
@@ -162,7 +156,7 @@
                                         Emergency Care
                                     </li>
                                 </ul>
-                                <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition">
+                                <button class="w-full bg-amber-400 text-white py-3 rounded-lg font-semibold hover:bg-amber-500 transition">
                                     Read More
                                 </button>
                             </div>
@@ -207,7 +201,7 @@
                                         Nail cliping and cleaning
                                     </li>
                                 </ul>
-                                <button class="w-full bg-green-600 text-white py-3 rounded-lg font-semibold hover:bg-green-700 transition">
+                                <button class="w-full bg-amber-400 text-white py-3 rounded-lg font-semibold hover:bg-amber-500 transition">
                                     Read More
                                 </button>
                             </div>
@@ -252,7 +246,7 @@
                                         Party Training
                                     </li>
                                 </ul>
-                                <button class="w-full bg-purple-600 text-white py-3 rounded-lg font-semibold hover:bg-purple-700 transition">
+                                <button class="w-full bg-amber-400 text-white py-3 rounded-lg font-semibold hover:bg-amber-500 transition">
                                     Read More
                                 </button>
                             </div>
@@ -297,7 +291,7 @@
                                         Regular exercise
                                     </li>
                                 </ul>
-                                <button class="w-full bg-yellow-600 text-white py-3 rounded-lg font-semibold hover:bg-yellow-700 transition">
+                                <button class="w-full bg-amber-400 text-white py-3 rounded-lg font-semibold hover:bg-amber-500 transition">
                                     Read More
                                 </button>
                             </div>
@@ -342,7 +336,7 @@
                                         Home Delevery
                                     </li>
                                 </ul>
-                                <button class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition">
+                                <button class="w-full bg-amber-400 text-white py-3 rounded-lg font-semibold hover:bg-amber-500 transition">
                                     Read More
                                 </button>
                             </div>
@@ -355,281 +349,244 @@
 
 
 
- <!-- About Section -->
- <div id="about" class="text-center mt-2 mb-17 text-4xl underline underline-offset-8 font-bold text-gray-800">
-        <h1><span class="text-amber-400">About</span> Us</h1>
+<!-- About Section -->
+<section id="about" class="scroll-mt-12 min-h-[80vh] md:min-h-screen flex flex-col justify-center px-4 md:px-12 lg:px-20 py-8 md:py-12 lg:py-16">
+  
+  <!-- Title -->
+  <div class="text-center mb-12">
+    <h1 class="text-4xl font-bold text-gray-800 underline underline-offset-8">
+      <span class="text-amber-400">About</span> Us
+    </h1>
+  </div>
+
+  <!-- Content -->
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Left Image -->
+    <div class="flex justify-center md:justify-start">
+      <img 
+        src="img/hygenic.jpg" 
+        alt="Pet Care" 
+        class="rounded-2xl shadow-xl w-full md:w-[90%] h-[300px] sm:h-[400px] md:h-[500px] lg:h-[550px] object-cover transition-transform duration-700 hover:scale-105"
+      >
     </div>
-  <section class="py-0 px-4 md:px-12 lg:px-20 mt-4" >
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-stretch">
 
-      <!-- Left Image -->
-      <div class="flex justify-center md:justify-start">
-        <img src="img/hygenic.jpg" 
-             alt="Pet Care" 
-             class="rounded-lg shadow-lg w-full md:w-[90%] h-full object-cover">
+    <!-- Right Text -->
+    <div class="flex flex-col justify-center text-center md:text-left animate-fadeIn">
+      <div>
+        <p class="text-sm uppercase tracking-wide text-gray-500">About Us</p>
+        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mt-2">
+          We are the Best for <span class="text-orange-500">Your Pet Care</span>
+        </h2>
+        <p class="text-gray-600 mt-4 leading-relaxed">
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, reprehenderit, aut, repellat molestias corrupti quos mollitia quam nihil labore quas sit laborum dolorum quae numquam neque asperiores a accusantium! Libero illo quaerat fugiat velit reprehenderit ipsam, at temporibus sapiente laboriosam accusantium natus provident sed, nostrum inventore porro asperiores, quo laudantium tempora! Mollitia reprehenderit distinctio impedit accusamus beatae nesciunt optio iure. Laboriosam, praesentium? Cupiditate facilis at dolores blanditiis error laudantium doloribus? Ipsam pariatur dolor suscipit labore deserunt voluptates. Rem aliquid repellendus vitae fugiat consequuntur nobis autem ducimus illo accusamus, velit ipsam placeat molestias quam voluptates sed unde atque quasi culpa? Provident?
+        </p>
       </div>
-
-      <!-- Right Text -->
-      <div class="flex flex-col justify-between h-full text-center md:text-left">
-        <div>
-          <p class="text-sm uppercase tracking-wide text-gray-500">About Us</p>
-          <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mt-2">
-            We are the Best for <span class="text-orange-500">Your Pet Care</span>
-          </h2>
-          <p class="text-gray-600 mt-4 leading-relaxed">
-           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, reprehenderit, aut, repellat molestias corrupti quos mollitia quam nihil labore quas sit laborum dolorum quae numquam neque asperiores a accusantium! Libero illo quaerat fugiat velit reprehenderit ipsam, at temporibus sapiente laboriosam accusantium natus provident sed, nostrum inventore porro asperiores, quo laudantium tempora! Mollitia reprehenderit distinctio impedit accusamus beatae nesciunt optio iure. Laboriosam, praesentium? Cupiditate facilis at dolores blanditiis error laudantium doloribus? Ipsam pariatur dolor suscipit labore deserunt voluptates. Rem aliquid repellendus vitae fugiat consequuntur nobis autem ducimus illo accusamus, velit ipsam placeat molestias quam voluptates sed unde atque quasi culpa? Provident?
-          </p>
-        </div>
-        <div class="mt-6">
-          <button class="px-5 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition">
-            Read More
-          </button>
-        </div>
+      <div class="mt-8">
+        <button class="px-6 py-3 bg-blue-600 text-white font-medium rounded-lg shadow hover:bg-blue-700 transition duration-300">
+          Read More
+        </button>
       </div>
-
     </div>
-  </section>
+
+  </div>
+</section>
 
 
 
 
 
  <!-- Package planning section -->
-    <section class=" px-4 mt-28 " id="pricing">
-        <div class="container mx-auto">
-            <!-- header-->
-            <div class="text-center mb-12 mt-13">
-                    <h2 class="sm:text-4xl text-3xl font-bold text-gray-800 mb-4 underline  underline-offset-[15px]">Our Pack<span class="text-amber-400">age planning</span></h2>
-                
-                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Select The package that suits your pet's needs.</p>
-            </div>
+<section class="px-4 py-12 md:py-16 lg:py-20 bg-gray-50 min-h-[80vh] md:min-h-screen flex items-center scroll-mt-12" id="pricing">
+  <div class="container mx-auto w-full">
 
-            <!-- Package cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                
-                <!-- Friendly Package-->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
-                    <div class="bg-green-500 text-white py-6 text-center">
-                        <h3 class="text-2xl font-bold">Friendly Package</h3>
-                        <div class="mt-4">
-                            <span class="text-4xl font-bold">$30</span>
-                            <span class="text-green-100">/Month</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                <span>Weakly Health Chekup</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                <span>Basic Grooming Service</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                <span>General vaccination</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
-                                <span>Telephone consultation</span>
-                            </li>
-                            <li class="flex items-start text-gray-400">
-                                <i class="fas fa-times mt-1 mr-3"></i>
-                                <span>Emergency service 24/7</span>
-                            </li>
-                            <li class="flex items-start text-gray-400">
-                                <i class="fas fa-times mt-1 mr-3"></i>
-                                <span>Specialized training</span>
-                            </li>
-                        </ul>
-                        <button class="w-full bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition duration-300">
-                            Select package
-                        </button>
-                    </div>
-                </div>
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <h2 class="sm:text-4xl text-3xl font-bold text-gray-800 mb-4 underline underline-offset-[15px]">
+        Our Pack<span class="text-amber-400">age Planning</span>
+      </h2>
+      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+        Select the package that suits your pet's needs.
+      </p>
+    </div>
 
-                <!-- Family Package -->
-                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 border-2 border-blue-500 relative">
-                    <div class="absolute top-0 right-0 bg-blue-500 text-white px-4 py-1 rounded-bl-lg text-sm font-semibold">
-                       Popular
-                    </div>
-                    <div class="bg-blue-600 text-white py-6 text-center">
-                        <h3 class="text-2xl font-bold">Family Package</h3>
-                        <div class="mt-4">
-                            <span class="text-4xl font-bold">$50</span>
-                            <span class="text-blue-100">/Month/span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                                <span>Weakly Health Checkup</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                                <span>Full Grooming Service</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                                <span>All necessary vaccinations</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                                <span>Video Consultation</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                                <span>Emergency services 12/7</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-blue-500 mt-1 mr-3"></i>
-                                <span>Basic Behavior Training</span>
-                            </li>
-                        </ul>
-                        <button class="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold transition duration-300">
-                            Select package
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Exclusive Package-->
-                <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
-                    <div class="bg-purple-600 text-white py-6 text-center">
-                        <h3 class="text-2xl font-bold">Exclusive Package</h3>
-                        <div class="mt-4">
-                            <span class="text-4xl font-bold">$80</span>
-                            <span class="text-purple-100">/Month</span>
-                        </div>
-                    </div>
-                    <div class="p-6">
-                        <ul class="space-y-4 mb-8">
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
-                                <span>Daily health monitoring</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
-                                <span>Premium Grooming Service</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
-                                <span>All vaccines + special vaccines</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
-                                <span>Home visit service</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
-                                <span>Emergency service 24/7</span>
-                            </li>
-                            <li class="flex items-start">
-                                <i class="fas fa-check text-purple-500 mt-1 mr-3"></i>
-                                <span>Advanced Training Program</span>
-                            </li>
-                        </ul>
-                        <button class="w-full bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition duration-300">
-                            Select package
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Additional Information -->
-            <div class="mt-15 text-center">
-                <p class="text-gray-600 mb-4 sm:text-4xl text-2xl">Customized packages are also available for your pet's special needs.</p>
-                <button class="bg-blue-800 hover:bg-blue-900 text-white px-6 py-3 cursor-pointer rounded-lg font-semibold transition duration-300">
-                    Contact for custom packages.
-                </button>
-            </div>
+    <!-- Package Cards -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4">
+      
+      <!-- Friendly Package -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+        <div class="bg-green-500 text-white py-6 text-center">
+          <h3 class="text-2xl font-bold">Friendly Package</h3>
+          <div class="mt-4">
+            <span class="text-4xl font-bold">$30</span>
+            <span class="text-green-100">/Month</span>
+          </div>
         </div>
-    </section>
+        <div class="p-6">
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i>Weakly Health Checkup</li>
+            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i>Basic Grooming Service</li>
+            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i>General vaccination</li>
+            <li class="flex items-start"><i class="fas fa-check text-green-500 mt-1 mr-3"></i>Telephone consultation</li>
+            <li class="flex items-start text-gray-400"><i class="fas fa-times mt-1 mr-3"></i>Emergency service 24/7</li>
+            <li class="flex items-start text-gray-400"><i class="fas fa-times mt-1 mr-3"></i>Specialized training</li>
+          </ul>
+          <a href="#booking" class="block text-center bg-green-500 hover:bg-green-600 text-white py-3 rounded-lg font-semibold transition duration-300">
+            Select Package
+          </a>
+        </div>
+      </div>
+
+      <!-- Family Package -->
+      <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform transition-all duration-300 hover:-translate-y-2 border-2 border-amber-400 relative">
+        <div class="absolute top-0 right-0 bg-amber-500 text-white px-4 py-1 rounded-bl-lg text-sm font-semibold">
+          Popular
+        </div>
+        <div class="bg-amber-400 text-white py-6 text-center">
+          <h3 class="text-2xl font-bold">Family Package</h3>
+          <div class="mt-4">
+            <span class="text-4xl font-bold">$50</span>
+            <span class="text-blue-100">/Month</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start"><i class="fas fa-check text-amber-400 mt-1 mr-3"></i>Weakly Health Checkup</li>
+            <li class="flex items-start"><i class="fas fa-check text-amber-400 mt-1 mr-3"></i>Full Grooming Service</li>
+            <li class="flex items-start"><i class="fas fa-check text-amber-400 mt-1 mr-3"></i>All necessary vaccinations</li>
+            <li class="flex items-start"><i class="fas fa-check text-amber-400 mt-1 mr-3"></i>Video Consultation</li>
+            <li class="flex items-start"><i class="fas fa-check text-amber-400 mt-1 mr-3"></i>Emergency services 12/7</li>
+            <li class="flex items-start"><i class="fas fa-check text-amber-400 mt-1 mr-3"></i>Basic Behavior Training</li>
+          </ul>
+          <a href="#booking" class="block text-center bg-amber-400 hover:bg-amber-500 text-white py-3 rounded-lg font-semibold transition duration-300">
+            Select Package
+          </a>
+        </div>
+      </div>
+
+      <!-- Exclusive Package -->
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden transform transition-all duration-300 hover:-translate-y-2">
+        <div class="bg-purple-600 text-white py-6 text-center">
+          <h3 class="text-2xl font-bold">Exclusive Package</h3>
+          <div class="mt-4">
+            <span class="text-4xl font-bold">$80</span>
+            <span class="text-purple-100">/Month</span>
+          </div>
+        </div>
+        <div class="p-6">
+          <ul class="space-y-4 mb-8">
+            <li class="flex items-start"><i class="fas fa-check text-purple-500 mt-1 mr-3"></i>Daily health monitoring</li>
+            <li class="flex items-start"><i class="fas fa-check text-purple-500 mt-1 mr-3"></i>Premium Grooming Service</li>
+            <li class="flex items-start"><i class="fas fa-check text-purple-500 mt-1 mr-3"></i>All vaccines + special vaccines</li>
+            <li class="flex items-start"><i class="fas fa-check text-purple-500 mt-1 mr-3"></i>Home visit service</li>
+            <li class="flex items-start"><i class="fas fa-check text-purple-500 mt-1 mr-3"></i>Emergency service 24/7</li>
+            <li class="flex items-start"><i class="fas fa-check text-purple-500 mt-1 mr-3"></i>Advanced Training Program</li>
+          </ul>
+          <a href="#booking" class="block text-center bg-purple-600 hover:bg-purple-700 text-white py-3 rounded-lg font-semibold transition duration-300">
+            Select Package
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
   
 
 
 
     <!-- Booking Section -->
-  <section class="py-12 px-4 md:px-12 lg:px-20 bg-gray-100" id="booking">
-    <div class="text-center sm:mb-18 text-4xl mt-5 font-bold text-gray-800">
-        <h2>Booking your <span class="text-amber-400"> Appointment</span></h2>
+<section class="mt-20 pt-8 px-4 md:px-12 lg:px-20 bg-gray-100 min-h-[80vh] md:min-h-screen scroll-mt-16" id="booking">
+  <div class="text-center mb-10">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">
+      Booking your <span class="text-amber-400">Appointment</span>
+    </h2>
+  </div>
+
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+    <!-- Left Form -->
+    <div class="bg-white p-6 md:p-8 rounded-2xl shadow-xl w-full">
+      <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center md:text-left">
+        Book an Appointment
+      </h2>
+      <form id="bookingForm" class="space-y-4">
+
+        <div>
+          <label class="block text-gray-700 mb-1">Full Name</label>
+          <input type="text" placeholder="Enter your name" 
+                 class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
+        </div>
+
+        <div>
+          <label class="block text-gray-700 mb-1">Phone Number</label>
+          <input type="tel" placeholder="Enter your phone number" 
+                 class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
+        </div>
+
+        <div>
+          <label class="block text-gray-700 mb-1">Preferred Date</label>
+          <input type="date" 
+                 class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
+        </div>
+
+        <div>
+          <label class="block text-gray-700 mb-1">Email Address</label>
+          <input type="email" placeholder="Enter your email" 
+                 class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
+        </div>
+
+        <div>
+          <label class="block text-gray-700 mb-1">Select Service</label>
+          <select class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none" required>
+            <option value="">-- Choose a Service --</option>
+            <option>Pet Grooming</option>
+            <option>Veterinary Checkup</option>
+            <option>Pet Training</option>
+            <option>Vaccination</option>
+            <option>Day Care</option>
+          </select>
+        </div>
+
+        <div class="flex text-center">
+          <button type="submit" 
+                  class="w-full cursor-pointer bg-gradient-to-r from-blue-600 to-blue-500 text-white py-3 rounded-lg font-semibold shadow hover:from-blue-700 hover:to-blue-600 transition-all duration-300">
+            Submit Now
+          </button>
+        </div>
+
+      </form>
     </div>
-    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
-      <!-- Left Form -->
-      <div class="bg-gray-100 p-6 md:p-8 rounded-2xl shadow-lg w-full">
-        <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6 text-center md:text-left">
-          Book an Appointment
-        </h2>
-        <form action="#" class="space-y-4">
-
-          <div>
-            <label class="block text-gray-700 mb-1">Full Name</label>
-            <input type="text" placeholder="Enter your name" 
-                   class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-          </div>
-
-
-          <div>
-            <label class="block text-gray-700 mb-1">Phone Number</label>
-            <input type="tel" placeholder="Enter your phone number" 
-                   class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-          </div>
-
-
-          <div>
-            <label class="block text-gray-700 mb-1">Preferred Date</label>
-            <input type="date" 
-                   class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-          </div>
-
-
-          <div>
-            <label class="block text-gray-700 mb-1">Email Address</label>
-            <input type="email" placeholder="Enter your email" 
-                   class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-          </div>
-
-          <!-- Service -->
-          <div>
-            <label class="block text-gray-700 mb-1">Select Service</label>
-            <select class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-              <option>-- Choose a Service --</option>
-              <option>Pet Grooming</option>
-              <option>Veterinary Checkup</option>
-              <option>Pet Training</option>
-              <option>Vaccination</option>
-              <option>Day Care</option>
-            </select>
-          </div>
-
-
-          <div>
-            <button type="submit" 
-                    class="w-full bg-blue-600 text-white py-2 rounded-lg shadow hover:bg-blue-700 transition">
-              Submit Now
-            </button>
-          </div>
-
-        </form>
-      </div>
-
-      <!-- Right Image -->
-      <div class="flex justify-center md:justify-end sm:h-full sm:w-full">
-        <img src="img/booking.jpg" 
-             alt="Booking" 
-             class="rounded-2xl shadow-lg w-full md:w-[90%] object-cover">
-      </div>
-
+    <!-- Right Image -->
+    <div class="flex justify-center items-center md:justify-end sm:h-full sm:w-full">
+      <img src="img/booking.jpg" alt="Booking"
+           class="rounded-2xl shadow-lg w-full md:w-[90%] h-[400px] md:h-[500px] object-cover">
     </div>
-  </section>
+
+  </div>
+
+  <!-- Popup Modal -->
+  <div id="successModal" class="fixed inset-0 flex items-start justify-center bg-black/50 hidden z-50">
+    <div class="bg-white mt-[-100px] rounded-xl shadow-2xl p-6 w-[90%] sm:w-[400px] text-center 
+                transform opacity-0 translate-y-[-50px] transition-all duration-500 ease-out">
+      <div class="text-green-600 text-5xl mb-2">✅</div>
+      <h2 class="text-2xl font-semibold text-green-600 mb-2">Your order has been submitted!</h2>
+      <p class="text-gray-700 mb-4">Thank you for booking with us.</p>
+      <button id="closeModal" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+        Close
+      </button>
+    </div>
+  </div>
+
+</section>
 
 
 
  <!-- Testimonials Section -->
-    <section class="py-20 px-4" id="testimonial">
+    <section class=" py-20 px-4 min-h-[80vh] md:min-h-screen lg:min-h-screen scroll-mt-16" id="testimonial">
         <div class="max-w-7xl mx-auto">
             <!-- Header -->
             <div class="text-center mb-16">
@@ -842,7 +799,7 @@
             </div>
 
             <!-- Stats Section -->
-            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="mt-16  grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div class="bg-white rounded-2xl p-6 shadow-lg">
                     <div class="text-3xl font-bold text-amber-400 mb-2">500+</div>
                     <div class="text-gray-600">Happy Clients</div>
@@ -861,19 +818,16 @@
                 </div>
             </div>
 
-            <!-- CTA Section -->
-            <div class="mt-16 text-center">
-                <div class="bg-gradient-to-r from-amber-400 to-amber-500 rounded-3xl p-12 text-white">
-                    <h3 class="text-3xl font-bold mb-4">Join Our Happy Pet Family</h3>
-                    <p class="text-green-100 text-xl mb-8 max-w-2xl mx-auto">
-                        Experience the same exceptional care that our clients love. Your pet deserves the best!
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button class="bg-white text-amber-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
-                            Get Started Today
-                        </button>
-                        <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-amber-400 transition duration-300">
-                            View All Packages
+            
+              <!-- Newsletter -->
+            <div class="mt-12 pt-12 border-t border-gray-700 bg-gradient-to-r from-amber-400 to-amber-500 rounded-3xl p-12">
+                <div class="max-w-2xl mx-auto text-center">
+                    <h3 class="text-3xl font-semibold text-white mb-4">Stay Updated</h3>
+                    <p class="text-gray-700 mb-6">Subscribe to our newsletter for pet care tips and special offers</p>
+                    <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
+                        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg bg-white border  text-white placeholder-gray-400 focus:outline-none focus:border-amber-500">
+                        <button class="bg-indigo-600 hover:bg-indigo-700 cursor-pointer text-white px-6 py-3 rounded-lg font-semibold transition duration-300 whitespace-nowrap">
+                            Subscribe
                         </button>
                     </div>
                 </div>
@@ -884,10 +838,8 @@
 
 
  <!-- Footer Section -->
-   <div id="contact" class="text-center text-4xl md:text-5xl font-bold  mb-8 text-gray-900">
-            <h2><span class="text-amber-400">Contact</span> Information</h2>
-        </div>
-    <footer class="bg-gray-900 text-white">
+
+    <footer class="bg-gray-900 text-white min-h-[80vh] md:min-h-screen lg:min-h-screen scroll-mt-16" id="contact">
         <!-- Main Footer Content -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -895,9 +847,7 @@
                 <!-- Company Info -->
                 <div class="lg:col-span-2">
                     <div class="flex items-center mb-6">
-                        <div class="w-12 h-12 bg-amber-500 rounded-full flex items-center justify-center">
-                            <i class="fas fa-paw text-white text-xl"></i>
-                        </div>
+                        
                         <span class="ml-3 text-2xl font-bold">PetCare</span>
                     </div>
                     <p class="text-gray-300 mb-6 leading-relaxed max-w-md">
@@ -1010,20 +960,6 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Newsletter -->
-            <div class="mt-12 pt-12 border-t border-gray-700">
-                <div class="max-w-2xl mx-auto text-center">
-                    <h3 class="text-xl font-semibold mb-4">Stay Updated</h3>
-                    <p class="text-gray-300 mb-6">Subscribe to our newsletter for pet care tips and special offers</p>
-                    <div class="flex flex-col sm:flex-row gap-4 max-w-md mx-auto">
-                        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg bg-gray-800 border border-gray-700 text-white placeholder-gray-400 focus:outline-none focus:border-amber-500">
-                        <button class="bg-amber-500 hover:bg-amber-600 text-white px-6 py-3 rounded-lg font-semibold transition duration-300 whitespace-nowrap">
-                            Subscribe
-                        </button>
-                    </div>
-                </div>
-            </div>
         </div>
 
         <!-- Bottom Footer -->
@@ -1096,28 +1032,7 @@
 
     
 
-    <script>
-        // Package Select Button Click Event
-        document.addEventListener('DOMContentLoaded', function() {
-            const buttons = document.querySelectorAll('button');
-            buttons.forEach(button => {
-                if (button.textContent.includes('Select package')) {
-                    button.addEventListener('click', function() {
-                        const packageName = this.closest('.bg-white').querySelector('h3').textContent;
-                        alert(`You ${packageName} Selected! We will contact you soon.`);
-                    });
-                }
-            });
-
-            // custom package button
-            const customButton = document.querySelector('button.bg-blue-800');
-            if (customButton) {
-                customButton.addEventListener('click', function() {
-                    alert('Contact us for custom packages: +1 919-555-8247');
-                });
-            }
-        });
-    </script>
+ 
 
 <script>
         // Swiper js for service section
@@ -1163,6 +1078,46 @@
             });
         });
     </script>
+
+
+
+<!-- JavaScript for pop up booking submit button -->
+<script>
+  const form = document.getElementById('bookingForm');
+  const modal = document.getElementById('successModal');
+  const modalBox = modal.querySelector('div');
+  const closeModal = document.getElementById('closeModal');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    // Show modal
+    modal.classList.remove('hidden');
+
+    // Animate slide-down + fade-in
+    setTimeout(() => {
+      modalBox.classList.remove('opacity-0', 'translate-y-[-50px]');
+      modalBox.classList.add('opacity-100', 'translate-y-[100px]');
+    }, 50);
+  });
+
+  closeModal.addEventListener('click', () => {
+    // Animate hide
+    modalBox.classList.remove('translate-y-[100px]', 'opacity-100');
+    modalBox.classList.add('translate-y-[-50px]', 'opacity-0');
+    setTimeout(() => {
+      modal.classList.add('hidden');
+    }, 400);
+  });
+
+  // Optional: Click outside to close
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      closeModal.click();
+    }
+  });
+</script>
+
 
 
    <script>
